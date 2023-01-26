@@ -37,9 +37,7 @@ int main(void)
 	printf("SYSCLK DESPUES DE CONFIGURAR EL PLL: %lu\r\n",SystemCoreClock);
     /* Loop forever */
 	for(;;){
-		count++;
-		while(delay-->0);
-		delay = 5000;
+
 	}
 }
 
