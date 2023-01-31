@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;SysTick_IT&apos;" deleteContents="true" description="Delete resource &apos;SysTick_IT&apos;" element1="/SysTick_IT" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1675127890819"/>&#x0A;<refactoring comment="Delete resource &apos;SysTick_IT/Debug/SysTick_Polling.elf&apos;" deleteContents="false" description="Delete resource &apos;SysTick_IT/Debug/SysTick_Polling.elf&apos;" element1="/SysTick_IT/Debug/SysTick_Polling.elf" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1675130417901"/>
+</session>
