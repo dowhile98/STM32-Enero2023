@@ -1,21 +1,22 @@
-21:50:23 **** Incremental Build of configuration Debug for project SysTick_IT ****
+21:04:38 **** Incremental Build of configuration Debug for project EXTI ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/SysTick_IT/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/SysTick_IT/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/SysTick_IT/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "SysTick_IT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Enero2023\SysTick_IT\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick_IT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SysTick_IT.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/EXTI/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/EXTI/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/EXTI/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/EXTI/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/EXTI/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/EXTI/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "EXTI.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Enero2023\EXTI\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: EXTI.elf
  
-arm-none-eabi-size   SysTick_IT.elf 
-arm-none-eabi-objdump -h -S  SysTick_IT.elf  > "SysTick_IT.list"
+arm-none-eabi-size   EXTI.elf 
+arm-none-eabi-objdump -h -S  EXTI.elf  > "EXTI.list"
    text	   data	    bss	    dec	    hex	filename
-   6888	    112	   1616	   8616	   21a8	SysTick_IT.elf
+   1684	     12	   1572	   3268	    cc4	EXTI.elf
 Finished building: default.size.stdout
  
-Finished building: SysTick_IT.list
+Finished building: EXTI.list
  
-21:50:30 **** Incremental Build of configuration Debug for project SysTick_IT ****
+21:05:09 **** Incremental Build of configuration Debug for project EXTI ****
 make -j8 all 
-arm-none-eabi-size   SysTick_IT.elf 
+arm-none-eabi-size   EXTI.elf 
    text	   data	    bss	    dec	    hex	filename
-   6888	    112	   1616	   8616	   21a8	SysTick_IT.elf
+   1684	     12	   1572	   3268	    cc4	EXTI.elf
 Finished building: default.size.stdout
  
