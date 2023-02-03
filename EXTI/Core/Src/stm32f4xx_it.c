@@ -33,5 +33,7 @@ void EXTI0_IRQHandler(void){
 		EXTI->PR |= EXTI_PR_PR0;		//Clear
 		//todo user code
 		GPIOX_ODR(LED1) ^= 1;
+
+
 	}
 }
