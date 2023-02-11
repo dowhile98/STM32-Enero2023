@@ -141,7 +141,7 @@ int main(void)
 		printf("la bateria es->%s", responsedata);		//se muestra el valor de bateria
 		lwrb_reset(&rbbuff);							//se limpia todo el buffer
 	}
-	//se obtiene la IP Del dispositivo
+	//se obtiene la ID Del dispositivo
 	at_send_cmd((uint8_t*)"AT$I=10\r\n",100);
 	delay_ms(100);
 	lwrb_read(&rbbuff, responsedata, lwrb_get_full(&rbbuff));
