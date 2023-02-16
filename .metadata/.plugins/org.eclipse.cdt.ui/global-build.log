@@ -1,21 +1,21 @@
-21:44:11 **** Incremental Build of configuration Debug for project ADC ****
+21:41:45 **** Incremental Build of configuration Debug for project DMA ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/ADC/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/ADC/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/ADC/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Enero2023\ADC\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ADC.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/DMA/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/DMA/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/DMA/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Enero2023\DMA\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DMA.elf
  
-arm-none-eabi-size   ADC.elf 
-arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+arm-none-eabi-size   DMA.elf 
+arm-none-eabi-objdump -h -S  DMA.elf  > "DMA.list"
    text	   data	    bss	    dec	    hex	filename
-  17448	    476	   1596	  19520	   4c40	ADC.elf
+  17608	    476	   1596	  19680	   4ce0	DMA.elf
 Finished building: default.size.stdout
  
-Finished building: ADC.list
+Finished building: DMA.list
  
-21:44:17 **** Incremental Build of configuration Debug for project ADC ****
+21:41:51 **** Incremental Build of configuration Debug for project DMA ****
 make -j8 all 
-arm-none-eabi-size   ADC.elf 
+arm-none-eabi-size   DMA.elf 
    text	   data	    bss	    dec	    hex	filename
-  17448	    476	   1596	  19520	   4c40	ADC.elf
+  17608	    476	   1596	  19680	   4ce0	DMA.elf
 Finished building: default.size.stdout
  
