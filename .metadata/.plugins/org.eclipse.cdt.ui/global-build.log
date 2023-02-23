@@ -1,21 +1,14 @@
-21:41:45 **** Incremental Build of configuration Debug for project DMA ****
+21:59:54 **** Incremental Build of configuration Debug for project I2C ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/DMA/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/DMA/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/DMA/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Enero2023\DMA\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: DMA.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/I2C/Core/Inc" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/I2C/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/TRABAJO/UMAKER/CURSOS/ARM - NUCLEO/STM32-Enero2023/I2C/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TRABAJO\UMAKER\CURSOS\ARM - NUCLEO\STM32-Enero2023\I2C\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C.elf
  
-arm-none-eabi-size   DMA.elf 
-arm-none-eabi-objdump -h -S  DMA.elf  > "DMA.list"
+arm-none-eabi-size   I2C.elf 
+arm-none-eabi-objdump -h -S  I2C.elf  > "I2C.list"
    text	   data	    bss	    dec	    hex	filename
-  17608	    476	   1596	  19680	   4ce0	DMA.elf
+   6488	    112	   1592	   8192	   2000	I2C.elf
 Finished building: default.size.stdout
  
-Finished building: DMA.list
- 
-21:41:51 **** Incremental Build of configuration Debug for project DMA ****
-make -j8 all 
-arm-none-eabi-size   DMA.elf 
-   text	   data	    bss	    dec	    hex	filename
-  17608	    476	   1596	  19680	   4ce0	DMA.elf
-Finished building: default.size.stdout
+Finished building: I2C.list
  

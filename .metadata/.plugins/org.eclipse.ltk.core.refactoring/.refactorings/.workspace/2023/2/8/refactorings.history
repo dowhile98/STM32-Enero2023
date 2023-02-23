@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/I2C/GPIO_BIT_BAND Debug.launch" element2="/I2C/GPIO_DEFINES Debug.launch" element3="/I2C/GPIO Debug.launch" element4="/I2C/SysTick_IT Debug.launch" element5="/I2C/SysTick_Polling Debug.launch" element6="/I2C/Template_CMSIS Debug.launch" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1677119210256"/>
+</session>
